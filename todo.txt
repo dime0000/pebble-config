@@ -1,0 +1,8 @@
+download mongoose free
+download ngrok
+
+run mongoose
+run ngrok http 8080
+
+
+video: 37:30
