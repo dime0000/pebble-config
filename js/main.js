@@ -20,7 +20,7 @@ function loadOptions() {
 	var $timeFormatCheckbox = $('#timeFormatCheckbox');
 
 	if (localStorage.backgroundColor) {
-		$backgroundColorPicker[0].value = localStorage.backgroundColor;
+		$backgroundColorPicker[0].checked = localStorage.backgroundColor  === 'true';
 		$timeFormatCheckbox[0].checked = localStorage.twentyFourHourFormat === 'true';
 	}
 	
@@ -31,7 +31,7 @@ function getAndStoreConfigData() {
 	var $timeFormatCheckbox = $('#timeFormatCheckbox');
 
 	var options = {
-		backgroundColor: $backgroundColorPicker.val(),
+		backgroundColor: $backgroundColorPicker[0].checked,
 		twentyFourHourFormat: $timeFormatCheckbox[0].checked
 	};
 
